@@ -1,0 +1,15 @@
+{
+  "frozen_before_sampling": true,
+  "R1": "within-block weights proportional to q-bin centers",
+  "R2": "within-block weights 1+2 exp[-0.5((q_center-0.9)/0.1)^2]",
+  "R3": "first three mass blocks weights 1.1-q_center; last three weights q_center; each mass marginal 1/6",
+  "n_realizations": 500,
+  "N": 20000,
+  "seed": 2026093008,
+  "caps": [
+    200,
+    500,
+    1000,
+    5000
+  ]
+}
