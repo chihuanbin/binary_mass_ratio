@@ -9,6 +9,7 @@ python revision_pasp_final/scripts/verify_baseline.py
 python revision_pasp_final/scripts/run_detection.py
 python revision_pasp_final/scripts/run_convergence_response.py
 python revision_pasp_final/scripts/run_extended.py
+python revision_pasp_final/scripts/audit_em_objective.py
 python revision_pasp_final/scripts/build_tables.py
 python revision_pasp_final/scripts/build_figures.py
 python revision_pasp_final/scripts/build_manuscript.py
@@ -31,16 +32,8 @@ All scientific experiments use the same frozen `calibration_200k.npz`. Seeds are
 
 `python revision_pasp_final/scripts/build_release.py` creates the portable source/result release and clean Overleaf archive. Raw MIST and cluster/member tables are available in the original local project but excluded from this portable release; source inventory includes their hashes. Rebuilding the raw-to-response chain is outside these commands.
 
-## Deposit status
+## Public release
 
-Public repository verified: https://github.com/chihuanbin/binary_mass_ratio
-Current remote commit inspected: `10c907f21bb9f43ef385372035eecddf45761cce` (2026-09-28). This is the existing remote snapshot, NOT the final revision release. No tagged GitHub release was found during this audit.
+The final GitHub version is `v1.0.0-pasp-final` at https://github.com/chihuanbin/binary_mass_ratio/releases/tag/v1.0.0-pasp-final . Its exact code commit, publication date, asset hashes and public verification evidence are recorded in `provenance/public_release.json` and the release audit. The existing two repository ZIPs remain historical files.
 
-Fill only after publishing the revision archive:
-
-- `RELEASE_TAG_TO_BE_FILLED`
-- `RELEASE_COMMIT_TO_BE_FILLED`
-- `RELEASE_DATE_TO_BE_FILLED`
-- `ZENODO_DOI_TO_BE_FILLED`
-
-No remote publication was performed. The final PDF retains explicit placeholders rather than claiming that unpublished files are public.
+Zenodo archiving and DOI assignment were explicitly deferred by the author during this final release patch. No Zenodo DOI is asserted. The source and manuscript use real GitHub version identifiers; the final release audit records the remaining original DOI acceptance condition.
